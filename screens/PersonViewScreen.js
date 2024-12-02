@@ -62,6 +62,8 @@ export default function PersonViewScreen(props) {
     return (
       <Surface
         style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+        mode="flat"
+        elevation={1}
       >
         <Text>Loading profile...</Text>
       </Surface>

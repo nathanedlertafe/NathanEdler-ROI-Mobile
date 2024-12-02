@@ -100,7 +100,7 @@ export default function PersonEditScreen(props) {
   }
 
   return (
-    <Surface style={{ flex: 1, padding: 16 }}>
+    <Surface style={{ flex: 1, padding: 16 }} mode="flat" elevation={1}>
       <Text
         variant="headlineLarge"
         style={{
