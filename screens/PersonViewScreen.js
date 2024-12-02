@@ -54,8 +54,9 @@ export default function PersonViewScreen(props) {
 
     fetchData();
   }, [isFocused]);
-  function showPeopleView(id) {
-    props.navigation.navigate("PeopleViewScreen", { id: id });
+
+  function showPeopleView() {
+    props.navigation.navigate("PeopleView");
   }
   if (!person) {
     return (
