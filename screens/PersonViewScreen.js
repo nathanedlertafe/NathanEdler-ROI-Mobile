@@ -29,7 +29,8 @@ import { Dropdown } from "react-native-paper-dropdown";
 import { fetchPersonById } from "../utils/api";
 
 export default function PersonViewScreen(props) {
-  const { id } = [props.route.params];
+  const { id } = props.route.params;
+
   const [person, setPerson] = useState(null);
   const [offline, setOffline] = useState(false);
   const [error, setError] = useState(null);
@@ -39,6 +40,7 @@ export default function PersonViewScreen(props) {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        console.log("id>>> ", id);
         const data = await fetchPersonById(id, setOffline); // offline mode
         setPerson(data);
         console.log("view person", data);
