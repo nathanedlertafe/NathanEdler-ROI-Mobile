@@ -12,6 +12,7 @@ export default function HelpScreen(props) {
 
   return (
     <Surface elevation={1} style={{ flex: 1, padding: 20 }}>
+      <ScrollView style={{ flex: 1 }}>
       <Text
         variant="headlineLarge"
         style={{
@@ -100,6 +101,7 @@ export default function HelpScreen(props) {
           remove the staff member from the directory.
         </Text>
       </View>
+      </ScrollView>
     </Surface>
   );
 }
